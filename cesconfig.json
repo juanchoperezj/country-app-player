@@ -1,0 +1,56 @@
+{
+  "cesVersion": "2.14.3",
+  "projectName": "challenge-crehana",
+  "packages": [
+    {
+      "name": "expo-router",
+      "type": "navigation",
+      "options": {
+        "type": "stack"
+      }
+    },
+    {
+      "name": "nativewindui",
+      "type": "styling",
+      "options": {
+        "selectedComponents": [
+          "activity-indicator",
+          "avatar",
+          "date-picker",
+          "picker",
+          "progress-indicator",
+          "ratings-indicator",
+          "slider",
+          "text",
+          "toggle",
+          "bottom-sheet",
+          "activity-view",
+          "action-sheet"
+        ]
+      }
+    },
+    {
+      "name": "zustand",
+      "type": "state-management"
+    }
+  ],
+  "flags": {
+    "noGit": false,
+    "noInstall": false,
+    "overwrite": false,
+    "importAlias": true,
+    "packageManager": "bun",
+    "eas": false,
+    "publish": false
+  },
+  "packageManager": {
+    "type": "bun",
+    "version": "1.0.0"
+  },
+  "os": {
+    "type": "Darwin",
+    "platform": "darwin",
+    "arch": "arm64",
+    "kernelVersion": "24.1.0"
+  }
+}
