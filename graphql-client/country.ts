@@ -9,6 +9,10 @@ export interface Country {
     name: string;
   };
   emoji: string;
+  languages: {
+    name: string;
+    native: string;
+  }[];
 }
 
 export interface Currency {
@@ -34,6 +38,24 @@ export const GET_CURRENCIES_PER_COUNTRY = gql`
   query getCurrenciesPerCountry {
     countries {
       currency
+    }
+  }
+`;
+
+export const GET_COUNTRY_DETAIL = gql`
+  query getCountryDetail($code: String!) {
+    countries(filter: { code: { eq: $code } }) {
+      code
+      name
+      currency
+      continent {
+        name
+      }
+      languages {
+        name
+        native
+      }
+      capital
     }
   }
 `;

@@ -39,7 +39,6 @@ export default function RootLayout() {
                 <Stack screenOptions={SCREEN_OPTIONS}>
                   <Stack.Screen name="index" options={INDEX_OPTIONS} />
                   <Stack.Screen name="filter-modal" options={MODAL_OPTIONS} />
-                  <Stack.Screen name="country-detail" options={COUNTRY_DETAIL_OPTIONS} />
                 </Stack>
               </NavThemeProvider>
             </ActionSheetProvider>
@@ -49,11 +48,6 @@ export default function RootLayout() {
     </>
   );
 }
-
-// TODO: Move to a separate file
-const COUNTRY_DETAIL_OPTIONS = {
-  title: 'Country Detail',
-} as const;
 
 const SCREEN_OPTIONS = {
   animation: 'ios_from_right', // for android

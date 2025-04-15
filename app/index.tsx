@@ -22,7 +22,6 @@ const filterCountries = (
   currency?: string
 ) => {
   if (continent || text || currency) {
-    console.log('🚀 ~ filterCountries ~ continent:', continent);
     return countries
       .filter((country) => country.name.toLowerCase().includes(text?.toLowerCase() ?? ''))
       .filter((country) => (continent ? country.continent.name === continent : true))
