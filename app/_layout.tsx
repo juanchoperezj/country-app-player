@@ -10,7 +10,7 @@ import { StatusBar } from 'expo-status-bar';
 import { Pressable, View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
-import { ThemeToggle } from '~/components/ThemeToggle';
+import { ThemeToggle } from '~/components/theme-toggle';
 import client from '~/graphql-client';
 import { cn } from '~/lib/cn';
 import { useColorScheme, useInitialAndroidBarSync } from '~/lib/useColorScheme';
